@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10">
+    <div id="card" class="bg-white rounded-2xl shadow p-6 max-w-sm">
+      <h2 class="text-lg font-bold text-gray-800 mb-2">My Card</h2>
+    </div>
+
+    <script>
+      // YOUR CODE HERE
+      // 1. Select the card div by id
+      // 2. Create a new <p> element
+      // 3. Set its textContent to "This paragraph was added by JavaScript."
+      // 4. Add these classes to it: "text-gray-500" "text-sm" "mt-2"
+      // 5. Append it inside the card div
+
+      const card = document.querySelector("#card");
+      const newParagraph = document.createElement("p");
+      newParagraph.textContent = "This paragraph was added by JavaScript.";
+      newParagraph.classList.add("text-gray-500", "text-sm", "mt-2");
+      card.appendChild(newParagraph);
+    </script>
+  </body>
+</html>
